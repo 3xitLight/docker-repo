@@ -1,0 +1,52 @@
+{
+   "abstract" : "Fast parsing of the Linux desktop files.",
+   "author" : [
+      "Daniel \"Trizen\" Șuteu <trizenx@gmail.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Build version 0.4224, CPAN::Meta::Converter version 2.150010",
+   "license" : [
+      "artistic_2"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : 2
+   },
+   "name" : "Linux-DesktopFiles",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {}
+      }
+   },
+   "provides" : {
+      "Linux::DesktopFiles" : {
+         "file" : "lib/Linux/DesktopFiles.pm",
+         "version" : "0.25"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/trizen/Linux-DesktopFiles/issues"
+      },
+      "homepage" : "https://github.com/trizen/Linux-DesktopFiles",
+      "license" : [
+         "http://opensource.org/licenses/artistic-license-2.0.php"
+      ],
+      "repository" : {
+         "url" : "https://github.com/trizen/Linux-DesktopFiles"
+      }
+   },
+   "version" : "0.25",
+   "x_serialization_backend" : "JSON::PP version 4.02"
+}

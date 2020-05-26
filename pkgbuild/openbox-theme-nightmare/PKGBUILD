@@ -1,0 +1,30 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Contributor: Elias Yuan <cecilelias.yuan@gmail.com>
+pkgname=nightmare-openbox-theme
+_de="Openbox"
+pkgbase='nightmare-openbox-theme'
+pkgver=1.0
+pkgrel=1
+pkgdesc="Nightmare themes for openbox,(black,red,blue,green)."
+arch=('any')
+url=""
+license=('GPL3')
+groups=('nightmare-openbox-theme')
+_src="165646-Nightmare.zip"
+source=("https://github.com/3xitLight/docker-repo/releases/download/1.1/165646-Nightmare.zip")
+sha256sums=('1b76ab61c86a73ed0684443e49981bbdb18e4da05c20ae073a282457a27ca522')
+_dest="/usr/share/themes"
+_dest2="/home/${USER}/.themes"
+
+package_nightmare-openbox-theme() {
+    pkgdesc="Dark Openbox theme."
+
+    if [ ! -d "$pkgdir"$_dest ]; then
+        install -d "$pkgdir"$_dest
+    fi
+    
+    if [ ! -d "$pkgdir"$_dest2 ]; then
+        install -d "$pkgdir"$_dest2
+    fi
+}
+

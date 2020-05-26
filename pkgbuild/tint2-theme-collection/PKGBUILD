@@ -1,0 +1,25 @@
+# Maintainer: Trizen <echo dHJpemVuQHByb3Rvbm1haWwuY29tCg== | base64 -d>
+
+pkgname=tint2-theme-collection
+pkgver=1.0
+pkgrel=1
+
+url="https://github.com/3xitLight/docker-repo/releases/download/1.1/"
+
+arch=('any')
+license=('GPL3')
+validpgpkeys=('591F0F9C880B9C1343895623531D5E7B92D539E6')
+depends=('openbox')
+source=("${pkgname}.tar.gz")
+
+sha256sums=('1b238e33bf3187ee8796a4bc141918178f63884fae419de94bbcd81e2224aff5')
+_dest="/home/${USER}/.config/tint2/"
+
+
+package_nightmare-openbox-theme() {
+	pkgdesc="A tint2 collection of 18 themes."
+
+    if [ ! -d "$pkgdir"$_dest ]; then
+        install -d "$pkgdir"$_dest
+    fi
+}
